@@ -1,4 +1,4 @@
-import mailer from './mailer.model';
+import { Mailer } from './models';
 
 const dataBase:IUserLogin[] = require( '../../data/userData');
 
@@ -38,6 +38,6 @@ export default class userLoginModel implements IUserLogin {
             return;
 
         if (this.ip != dataBase[index].ip && dataBase[index].mail != undefined)
-            mailer.sendMail("Te loguiaste desde un dispositivo distinto a la ultima vez, esta todo bien?\n Nueva registrada IP: "+this.ip, dataBase[index].mail!);
+            Mailer.sendMail("Te loguiaste desde un dispositivo distinto a la ultima vez, esta todo bien?\n Nueva registrada IP: "+this.ip, dataBase[index].mail!);
     }
 }
