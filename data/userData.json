@@ -1,0 +1,14 @@
+[
+    {
+        "userName": "facu",
+        "password": "facu123",
+        "ip": "192.168.0.1",
+        "mail": "facundo.jardon@gmail.com"
+    },
+    {
+        "userName": "bruno",
+        "password": "bruno123",
+        "ip": "192.168.0.0",
+        "mail": "bruno@gmail.com"
+    }
+]
